@@ -7,6 +7,7 @@
 #include "boost/filesystem/path.hpp"
 #include <iostream>
 #include <fstream>
+#include <algorithm>
 
 #include "utils.hpp"
 
@@ -80,13 +81,21 @@ vector<string> listFilename(string path)
 	return listname;
 }
 
+vector<?>
+
+
 int main()
-{
+{	
+	srand ( unsigned ( time(0) ) );
+	
+
 	string datapath = datapath_;	
 	vector<string> foldername = listFolder(datapath);
 
+
 	string dictionarypath = dictionarypath_;
 	createDictionary(dictionarypath,foldername);
+
 
 	vector< pair<string,int> > dict = readDictionary(dictionarypath);
 
@@ -103,6 +112,9 @@ int main()
 		}
 	}
 	
+	random_shuffle(pathAndLabel.begin(), pathAndLabel.end());
+
+
 
 
 
