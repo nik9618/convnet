@@ -10,7 +10,7 @@
 
 #include "utils.hpp"
 
-#define datapath_ "/home/kanit/convnet/data/256_ObjectCategories"
+#define datapath_ "/home/kanit/convnet/data/256_ObjectCategories/"
 #define dictionarypath_ "/home/kanit/convnet/res/dictionary"
 
 using namespace std;
@@ -21,16 +21,16 @@ vector<string> listFolder(string datapath)
 	fs::directory_iterator end_iter;
 	vector<string> foldername(0);
 	for( fs::directory_iterator dir_iter(datapath.c_str()) ; dir_iter != end_iter ; ++dir_iter)
-    {
-    	fs::directory_entry& entry = *dir_iter;
-    	ostringstream oss;
+	{
+		fs::directory_entry& entry = *dir_iter;
+		ostringstream oss;
 		oss << entry;
 
 		string path = oss.str();
 		path = path.substr(path.find_last_of("/")+1, path.length() - path.find_last_of("/")-2);
 		foldername.push_back(path);
-    }
-    return foldername;
+	}
+	return foldername;
 }
 
 void createDictionary(string dictionarypath, vector<string> foldername)
@@ -40,7 +40,7 @@ void createDictionary(string dictionarypath, vector<string> foldername)
 	for(int i = 0; i< foldername.size(); i++)
 	{
 		dictFile << foldername[i] <<"\t"<< i <<"\n";
-		// cout << foldername[i] <<endl;
+		cout << foldername[i] <<endl;
 	}
 	dictFile.close();
 }
@@ -55,13 +55,29 @@ vector< pair<string,int> > readDictionary(string dictionarypath)
 		while ( getline (dfile,line) )
 		{
 			vector<string> strs = split(line, '\t');
-			cout <<strs[0] <<"---" << strs[1]<<endl;
 			pair<string,double> p(strs[0], atoi(strs[1].c_str()));
 			ret.push_back(p);
 		}
 		dfile.close();
 	}
 	return ret;
+}
+
+vector<string> listFilename(string path) 
+{
+	namespace fs = boost::filesystem;
+	fs::directory_iterator end_iter;
+	vector<string> listname(0);
+	for( fs::directory_iterator dir_iter(path.c_str()) ; dir_iter != end_iter ; ++dir_iter)
+	{
+		fs::directory_entry& entry = *dir_iter;
+		ostringstream oss;
+		oss << entry;
+		path = oss.str();
+		path = path.substr(path.find_last_of("/")+1, path.length() - path.find_last_of("/")-2);
+		listname.push_back(path);
+	}
+	return listname;
 }
 
 int main()
@@ -73,10 +89,38 @@ int main()
 	createDictionary(dictionarypath,foldername);
 
 	vector< pair<string,int> > dict = readDictionary(dictionarypath);
-	cout << dict[0].first<<"    " << dict[0].second <<endl;
 
 
+	vector< pair<string,int> > pathAndLabel(0);
+	for(int i=0; i<dict.size(); i++)
+	{
+		string path = datapath + dict[0].first+"/";
+		vector<string> files = listFilename(path);
+		for(int j=0; j<files.size(); j++)
+		{
+			pathAndLabel.push_back( pair<string,int>(path+files[j],dict[i].second) );
+			cout<< path + files[j] <<"  " << dict[i].second<<endl;
+		}
+	}
 	
+
+
+
 	// new Datum(datapath,0);
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
