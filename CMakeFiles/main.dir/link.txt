@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/main.dir/src/main.cpp.o CMakeFiles/main.dir/src/Data.cpp.o  -o main  -L/usr/local/cuda/lib64 -rdynamic -llmdb -Wl,-rpath,/usr/local/cuda/lib64 

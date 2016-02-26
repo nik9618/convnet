@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kanit/convnet/src/Data.cpp
+Data.hpp
+-
+
+/home/kanit/convnet/src/Data.hpp
+stdio.h
+-
+string
+-
+lmdb.h
+-
+iostream
+-
+
+/home/kanit/convnet/src/main.cpp
+stdio.h
+-
+string
+-
+iostream
+-
+Data.hpp
+/home/kanit/convnet/src/Data.hpp
+
+src/Data.hpp
+stdio.h
+-
+string
+-
+lmdb.h
+-
+iostream
+-
+
