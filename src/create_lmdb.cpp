@@ -11,7 +11,7 @@
 #include "proto/data.pb.h"
 
 #include "utils.hpp"
-#include "Datum.hpp"
+#include "Db.hpp"
 
 #define datapath_ "/home/kanit/convnet/data/256_ObjectCategories/"
 #define categorypath_ "/home/kanit/convnet/proto/categoryList.proto"
@@ -122,29 +122,14 @@ int main()
 	// new Datum(pathAndLabel[0].first,pathAndLabel[0].second); // string and int = path and label
 
 	// //create lmdb 
-	// Data* d = new Data(dbpath_);
-	// d->drop();
+	DB* d = new DB(dbpath_);
+	d->drop();
 	
 	// //push and commit to lmdb
-	// Data* g = new Data(dbpath_);
-	// g->createDB(pathAndLabel);
+	DB* g = new DB(dbpath_);
+	g->createDB(pathAndLabel);
 
 
 	//read from db
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

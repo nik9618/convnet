@@ -23,9 +23,9 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR})
 add_executable(
     create_lmdb
     src/create_lmdb.cpp
-    src/Datum.cpp
 	src/proto/data.pb.cc
-    src/utils.cpp)
+    src/utils.cpp
+    src/Db.cpp)
 
 target_link_libraries(create_lmdb ${LMDB_LIBRARY})
 target_link_libraries(create_lmdb ${Boost_LIBRARIES})

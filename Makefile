@@ -114,29 +114,29 @@ create_lmdb/fast:
 	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/build
 .PHONY : create_lmdb/fast
 
-src/Datum.o: src/Datum.cpp.o
-.PHONY : src/Datum.o
+src/Db.o: src/Db.cpp.o
+.PHONY : src/Db.o
 
 # target to build an object file
-src/Datum.cpp.o:
-	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Datum.cpp.o
-.PHONY : src/Datum.cpp.o
+src/Db.cpp.o:
+	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Db.cpp.o
+.PHONY : src/Db.cpp.o
 
-src/Datum.i: src/Datum.cpp.i
-.PHONY : src/Datum.i
+src/Db.i: src/Db.cpp.i
+.PHONY : src/Db.i
 
 # target to preprocess a source file
-src/Datum.cpp.i:
-	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Datum.cpp.i
-.PHONY : src/Datum.cpp.i
+src/Db.cpp.i:
+	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Db.cpp.i
+.PHONY : src/Db.cpp.i
 
-src/Datum.s: src/Datum.cpp.s
-.PHONY : src/Datum.s
+src/Db.s: src/Db.cpp.s
+.PHONY : src/Db.s
 
 # target to generate assembly for a file
-src/Datum.cpp.s:
-	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Datum.cpp.s
-.PHONY : src/Datum.cpp.s
+src/Db.cpp.s:
+	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Db.cpp.s
+.PHONY : src/Db.cpp.s
 
 src/create_lmdb.o: src/create_lmdb.cpp.o
 .PHONY : src/create_lmdb.o
@@ -219,9 +219,9 @@ help:
 	@echo "... create_lmdb"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... src/Datum.o"
-	@echo "... src/Datum.i"
-	@echo "... src/Datum.s"
+	@echo "... src/Db.o"
+	@echo "... src/Db.i"
+	@echo "... src/Db.s"
 	@echo "... src/create_lmdb.o"
 	@echo "... src/create_lmdb.i"
 	@echo "... src/create_lmdb.s"
