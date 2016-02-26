@@ -27,7 +27,8 @@ int main()
 		path = path.substr(path.find_last_of("/")+1,path.length());
 		foldername.push_back(path);
     }
-    
+
 	new Datum(datapath,0);
 	return 0;
 }
+//
