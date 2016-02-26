@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string>
-#include <iostream>
 #include <vector>
 #include <iterator> 
 #include "boost/filesystem/operations.hpp"
@@ -9,12 +8,13 @@
 #include <fstream>
 #include <algorithm>
 
+#include "proto/data.pb.h"
+
 #include "utils.hpp"
 #include "Datum.hpp"
-#include "Data.hpp"
 
 #define datapath_ "/home/kanit/convnet/data/256_ObjectCategories/"
-#define dictionarypath_ "/home/kanit/convnet/res/dictionary"
+#define categorypath_ "/home/kanit/convnet/proto/categoryList.proto"
 #define dbpath_ "/home/kanit/convnet/data/lmdb"
 
 using namespace std;
@@ -29,40 +29,46 @@ vector<string> listFolder(string datapath)
 		fs::directory_entry& entry = *dir_iter;
 		ostringstream oss;
 		oss << entry;
-
 		string path = oss.str();
 		path = path.substr(path.find_last_of("/")+1, path.length() - path.find_last_of("/")-2);
 		foldername.push_back(path);
 	}
+	sort (foldername.begin(), foldername.end());
 	return foldername;
 }
 
-void createDictionary(string dictionarypath, vector<string> foldername)
+void createCategoryList(string categorypath, vector<string> foldername)
 {
-	ofstream dictFile;
-	dictFile.open(dictionarypath.c_str());
+	Data::categoryList cateList;
 	for(int i = 0; i< foldername.size(); i++)
 	{
-		dictFile << foldername[i] <<"\t"<< i <<"\n";
-		// cout << foldername[i] <<endl;
+		Data::category* cate = cateList.add_category();
+		cate->set_name(foldername[i]);
+		cate->set_id(i);
 	}
-	dictFile.close();
+	// cout << cateList.SerializeAsString()<<endl;
+	fstream output(categorypath.c_str(), ios::out | ios::trunc | ios::binary);
+	if (!cateList.SerializeToOstream(&output)) {
+		cerr << "Failed to write categorylist" << endl;
+	}
 }
 
-vector< pair<string,int> > readDictionary(string dictionarypath)
+vector< pair<string,int> > readCategoryList(string categorypath)
 {
-	string line;
 	vector< pair<string,int> > ret(0);
-	ifstream dfile (dictionarypath.c_str());
-	if (dfile.is_open())
+	Data::categoryList cateList;
+	fstream input(categorypath.c_str(), ios::in | ios::binary);
+	
+	if (!cateList.ParseFromIstream(&input)) {
+		cout << "Failed to parse cate." << endl;
+		return ret;
+	}
+
+	for(int i=0; i<cateList.category_size(); i++)
 	{
-		while ( getline (dfile,line) )
-		{
-			vector<string> strs = split(line, '\t');
-			pair<string,double> p(strs[0], atoi(strs[1].c_str()));
-			ret.push_back(p);
-		}
-		dfile.close();
+		Data::category* cate = cateList.mutable_category(i);	
+		pair<string,double> p(cate->name(), cate->id());
+		ret.push_back(p);
 	}
 	return ret;
 }
@@ -92,37 +98,39 @@ int main()
 	vector<string> foldername = listFolder(datapath);
 
 
-	string dictionarypath = dictionarypath_;
-	createDictionary(dictionarypath,foldername);
+	string categorypath = categorypath_;
+	createCategoryList(categorypath,foldername);
 
-
-	vector< pair<string,int> > dict = readDictionary(dictionarypath);
+	vector< pair<string,int> > categories = readCategoryList(categorypath);
 
 
 	vector< pair<string,int> > pathAndLabel(0);
-	for(int i=0; i<dict.size(); i++)
+	for(int i=0; i<categories.size(); i++)
 	{
-		string path = datapath + dict[0].first+"/";
+		string path = datapath + categories[i].first+"/";
 		vector<string> files = listFilename(path);
 		for(int j=0; j<files.size(); j++)
 		{
-			pathAndLabel.push_back( pair<string,int>(path+files[j],dict[i].second) );
-			// cout<< path + files[j] <<"  " << dict[i].second<<endl;
+			pathAndLabel.push_back( pair<string,int>(path+files[j],categories[i].second) );
+			// cout<< path + files[j] <<"  " << categories[i].second<<endl;
 		}
 	}
-	
 	
 	random_shuffle(pathAndLabel.begin(), pathAndLabel.end());
 
 	//create datum, just try
-	new Datum(pathAndLabel[0].first,pathAndLabel[0].second); // string and int = path and label
+	// new Datum(pathAndLabel[0].first,pathAndLabel[0].second); // string and int = path and label
 
-	//create lmdb 
-	new Data(dbpath_);
+	// //create lmdb 
+	// Data* d = new Data(dbpath_);
+	// d->drop();
+	
+	// //push and commit to lmdb
+	// Data* g = new Data(dbpath_);
+	// g->createDB(pathAndLabel);
 
-	//push and commit to lmdb
 
-	// new Datum(datapath,0);
+	//read from db
 	return 0;
 }
 

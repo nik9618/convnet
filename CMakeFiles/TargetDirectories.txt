@@ -1,2 +1,1 @@
 /home/kanit/convnet/CMakeFiles/create_lmdb.dir
-/home/kanit/convnet/CMakeFiles/main.dir

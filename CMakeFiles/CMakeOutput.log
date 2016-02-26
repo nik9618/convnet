@@ -271,3 +271,37 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/kanit/convnet/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1920230900/fast"
+make[1]: Entering directory `/home/kanit/convnet/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1920230900.dir/build.make CMakeFiles/cmTryCompileExec1920230900.dir/build
+make[2]: Entering directory `/home/kanit/convnet/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/kanit/convnet/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1920230900.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1920230900.dir/CheckIncludeFiles.c.o   -c /home/kanit/convnet/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1920230900
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1920230900.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1920230900.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1920230900 -rdynamic 
+make[2]: Leaving directory `/home/kanit/convnet/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/kanit/convnet/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/kanit/convnet/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1297331299/fast"
+make[1]: Entering directory `/home/kanit/convnet/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1297331299.dir/build.make CMakeFiles/cmTryCompileExec1297331299.dir/build
+make[2]: Entering directory `/home/kanit/convnet/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/kanit/convnet/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1297331299.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1297331299.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1297331299
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1297331299.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1297331299.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1297331299 -rdynamic -lpthread 
+make[2]: Leaving directory `/home/kanit/convnet/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/kanit/convnet/CMakeFiles/CMakeTmp'
+
+

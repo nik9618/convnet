@@ -114,46 +114,6 @@ create_lmdb/fast:
 	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/build
 .PHONY : create_lmdb/fast
 
-#=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-src/Data.o: src/Data.cpp.o
-.PHONY : src/Data.o
-
-# target to build an object file
-src/Data.cpp.o:
-	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Data.cpp.o
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Data.cpp.o
-.PHONY : src/Data.cpp.o
-
-src/Data.i: src/Data.cpp.i
-.PHONY : src/Data.i
-
-# target to preprocess a source file
-src/Data.cpp.i:
-	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Data.cpp.i
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Data.cpp.i
-.PHONY : src/Data.cpp.i
-
-src/Data.s: src/Data.cpp.s
-.PHONY : src/Data.s
-
-# target to generate assembly for a file
-src/Data.cpp.s:
-	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Data.cpp.s
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Data.cpp.s
-.PHONY : src/Data.cpp.s
-
 src/Datum.o: src/Datum.cpp.o
 .PHONY : src/Datum.o
 
@@ -202,29 +162,29 @@ src/create_lmdb.cpp.s:
 	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/create_lmdb.cpp.s
 .PHONY : src/create_lmdb.cpp.s
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/proto/data.pb.o: src/proto/data.pb.cc.o
+.PHONY : src/proto/data.pb.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/proto/data.pb.cc.o:
+	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/proto/data.pb.cc.o
+.PHONY : src/proto/data.pb.cc.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/proto/data.pb.i: src/proto/data.pb.cc.i
+.PHONY : src/proto/data.pb.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/proto/data.pb.cc.i:
+	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/proto/data.pb.cc.i
+.PHONY : src/proto/data.pb.cc.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/proto/data.pb.s: src/proto/data.pb.cc.s
+.PHONY : src/proto/data.pb.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/proto/data.pb.cc.s:
+	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/proto/data.pb.cc.s
+.PHONY : src/proto/data.pb.cc.s
 
 src/utils.o: src/utils.cpp.o
 .PHONY : src/utils.o
@@ -258,20 +218,16 @@ help:
 	@echo "... depend"
 	@echo "... create_lmdb"
 	@echo "... edit_cache"
-	@echo "... main"
 	@echo "... rebuild_cache"
-	@echo "... src/Data.o"
-	@echo "... src/Data.i"
-	@echo "... src/Data.s"
 	@echo "... src/Datum.o"
 	@echo "... src/Datum.i"
 	@echo "... src/Datum.s"
 	@echo "... src/create_lmdb.o"
 	@echo "... src/create_lmdb.i"
 	@echo "... src/create_lmdb.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/proto/data.pb.o"
+	@echo "... src/proto/data.pb.i"
+	@echo "... src/proto/data.pb.s"
 	@echo "... src/utils.o"
 	@echo "... src/utils.i"
 	@echo "... src/utils.s"
