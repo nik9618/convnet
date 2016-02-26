@@ -10,6 +10,7 @@
 #include <algorithm>
 
 #include "utils.hpp"
+#include "Datum.hpp"
 
 #define datapath_ "/home/kanit/convnet/data/256_ObjectCategories/"
 #define dictionarypath_ "/home/kanit/convnet/res/dictionary"
@@ -41,7 +42,7 @@ void createDictionary(string dictionarypath, vector<string> foldername)
 	for(int i = 0; i< foldername.size(); i++)
 	{
 		dictFile << foldername[i] <<"\t"<< i <<"\n";
-		cout << foldername[i] <<endl;
+		// cout << foldername[i] <<endl;
 	}
 	dictFile.close();
 }
@@ -81,9 +82,6 @@ vector<string> listFilename(string path)
 	return listname;
 }
 
-vector<?>
-
-
 int main()
 {	
 	srand ( unsigned ( time(0) ) );
@@ -108,15 +106,20 @@ int main()
 		for(int j=0; j<files.size(); j++)
 		{
 			pathAndLabel.push_back( pair<string,int>(path+files[j],dict[i].second) );
-			cout<< path + files[j] <<"  " << dict[i].second<<endl;
+			// cout<< path + files[j] <<"  " << dict[i].second<<endl;
 		}
 	}
 	
+	
 	random_shuffle(pathAndLabel.begin(), pathAndLabel.end());
 
+	//create datum, just try
+	new Datum(pathAndLabel[0].first,pathAndLabel[0].second); // string and int = path and label
+
+	//create lmdb 
 
 
-
+	//push and commit to lmdb
 
 	// new Datum(datapath,0);
 	return 0;
