@@ -1,6 +1,5 @@
 project (ConvNet)
 cmake_minimum_required (VERSION 2.6)
-#find_package(CUDA)
 
 include_directories(/home/kanit/convnet/src)
 
@@ -24,6 +23,7 @@ add_executable(
     create_lmdb
     src/create_lmdb.cpp
     src/Datum.cpp
+    src/Data.cpp
     src/utils.cpp)
 
 target_link_libraries(main ${LMDB_LIBRARY})
@@ -35,7 +35,7 @@ target_link_libraries(create_lmdb ${OpenCV_LIBS})
 
 
 
-
+#find_package(CUDA)
 # include_directories(/home/kanit/build/cudnn/include)
 # link_directories(/home/kanit/build/cudnn/lib64)
 # set (CMAKE_SHARED_LINKER_FLAGS "-lcudnn")

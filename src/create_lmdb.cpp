@@ -11,9 +11,11 @@
 
 #include "utils.hpp"
 #include "Datum.hpp"
+#include "Data.hpp"
 
 #define datapath_ "/home/kanit/convnet/data/256_ObjectCategories/"
 #define dictionarypath_ "/home/kanit/convnet/res/dictionary"
+#define dbpath_ "/home/kanit/convnet/data/lmdb"
 
 using namespace std;
 
@@ -86,8 +88,7 @@ int main()
 {	
 	srand ( unsigned ( time(0) ) );
 	
-
-	string datapath = datapath_;	
+	string datapath = datapath_;
 	vector<string> foldername = listFolder(datapath);
 
 
@@ -117,7 +118,7 @@ int main()
 	new Datum(pathAndLabel[0].first,pathAndLabel[0].second); // string and int = path and label
 
 	//create lmdb 
-
+	new Data(dbpath_);
 
 	//push and commit to lmdb
 

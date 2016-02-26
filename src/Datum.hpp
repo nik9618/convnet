@@ -18,6 +18,4 @@ class Datum
 		int width;
 		int label;
 		cv::Mat image;
-
-
 };

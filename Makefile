@@ -132,6 +132,7 @@ src/Data.o: src/Data.cpp.o
 
 # target to build an object file
 src/Data.cpp.o:
+	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Data.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Data.cpp.o
 .PHONY : src/Data.cpp.o
 
@@ -140,6 +141,7 @@ src/Data.i: src/Data.cpp.i
 
 # target to preprocess a source file
 src/Data.cpp.i:
+	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Data.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Data.cpp.i
 .PHONY : src/Data.cpp.i
 
@@ -148,6 +150,7 @@ src/Data.s: src/Data.cpp.s
 
 # target to generate assembly for a file
 src/Data.cpp.s:
+	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Data.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Data.cpp.s
 .PHONY : src/Data.cpp.s
 

@@ -98,9 +98,32 @@ CMakeFiles/create_lmdb.dir/src/Datum.cpp.o.provides: CMakeFiles/create_lmdb.dir/
 
 CMakeFiles/create_lmdb.dir/src/Datum.cpp.o.provides.build: CMakeFiles/create_lmdb.dir/src/Datum.cpp.o
 
+CMakeFiles/create_lmdb.dir/src/Data.cpp.o: CMakeFiles/create_lmdb.dir/flags.make
+CMakeFiles/create_lmdb.dir/src/Data.cpp.o: src/Data.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kanit/convnet/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/create_lmdb.dir/src/Data.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/create_lmdb.dir/src/Data.cpp.o -c /home/kanit/convnet/src/Data.cpp
+
+CMakeFiles/create_lmdb.dir/src/Data.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/create_lmdb.dir/src/Data.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kanit/convnet/src/Data.cpp > CMakeFiles/create_lmdb.dir/src/Data.cpp.i
+
+CMakeFiles/create_lmdb.dir/src/Data.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/create_lmdb.dir/src/Data.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kanit/convnet/src/Data.cpp -o CMakeFiles/create_lmdb.dir/src/Data.cpp.s
+
+CMakeFiles/create_lmdb.dir/src/Data.cpp.o.requires:
+.PHONY : CMakeFiles/create_lmdb.dir/src/Data.cpp.o.requires
+
+CMakeFiles/create_lmdb.dir/src/Data.cpp.o.provides: CMakeFiles/create_lmdb.dir/src/Data.cpp.o.requires
+	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Data.cpp.o.provides.build
+.PHONY : CMakeFiles/create_lmdb.dir/src/Data.cpp.o.provides
+
+CMakeFiles/create_lmdb.dir/src/Data.cpp.o.provides.build: CMakeFiles/create_lmdb.dir/src/Data.cpp.o
+
 CMakeFiles/create_lmdb.dir/src/utils.cpp.o: CMakeFiles/create_lmdb.dir/flags.make
 CMakeFiles/create_lmdb.dir/src/utils.cpp.o: src/utils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kanit/convnet/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kanit/convnet/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/create_lmdb.dir/src/utils.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/create_lmdb.dir/src/utils.cpp.o -c /home/kanit/convnet/src/utils.cpp
 
@@ -125,6 +148,7 @@ CMakeFiles/create_lmdb.dir/src/utils.cpp.o.provides.build: CMakeFiles/create_lmd
 create_lmdb_OBJECTS = \
 "CMakeFiles/create_lmdb.dir/src/create_lmdb.cpp.o" \
 "CMakeFiles/create_lmdb.dir/src/Datum.cpp.o" \
+"CMakeFiles/create_lmdb.dir/src/Data.cpp.o" \
 "CMakeFiles/create_lmdb.dir/src/utils.cpp.o"
 
 # External object files for target create_lmdb
@@ -132,6 +156,7 @@ create_lmdb_EXTERNAL_OBJECTS =
 
 create_lmdb: CMakeFiles/create_lmdb.dir/src/create_lmdb.cpp.o
 create_lmdb: CMakeFiles/create_lmdb.dir/src/Datum.cpp.o
+create_lmdb: CMakeFiles/create_lmdb.dir/src/Data.cpp.o
 create_lmdb: CMakeFiles/create_lmdb.dir/src/utils.cpp.o
 create_lmdb: CMakeFiles/create_lmdb.dir/build.make
 create_lmdb: /usr/lib/x86_64-linux-gnu/liblmdb.so
@@ -189,6 +214,7 @@ CMakeFiles/create_lmdb.dir/build: create_lmdb
 
 CMakeFiles/create_lmdb.dir/requires: CMakeFiles/create_lmdb.dir/src/create_lmdb.cpp.o.requires
 CMakeFiles/create_lmdb.dir/requires: CMakeFiles/create_lmdb.dir/src/Datum.cpp.o.requires
+CMakeFiles/create_lmdb.dir/requires: CMakeFiles/create_lmdb.dir/src/Data.cpp.o.requires
 CMakeFiles/create_lmdb.dir/requires: CMakeFiles/create_lmdb.dir/src/utils.cpp.o.requires
 .PHONY : CMakeFiles/create_lmdb.dir/requires
 
