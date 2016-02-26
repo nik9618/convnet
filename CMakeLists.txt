@@ -14,7 +14,7 @@ find_package( OpenCV REQUIRED )
 
 find_package(Boost 1.59 COMPONENTS system filesystem REQUIRED)
 include_directories(${Boost_INCLUDE_DIRS})
-
+message(${Boost_LIBRARY_DIRS})
 
 add_executable(
     main
