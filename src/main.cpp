@@ -20,8 +20,11 @@ int main()
 	cout<< data.label() <<endl;
 	cout<< data.name() <<endl;
 
-	data = d->read();
-	data = d->read();
+	string* img = data.mutable_data();
+	vector<uchar> v(img->length());
+	memcpy(&v,&img,img->length()); 
+
+
 	d->endread();
 	return 0;
 }

@@ -77,7 +77,7 @@ void DB::createDB(vector< pair<string,int> > pairs)
 			anImage.set_label(p.second);
 			anImage.set_name(p.first);
 			// cout << s.width << " " << s.height <<endl;
-			std::vector<uchar> buf;
+			vector<uchar> buf;
 			cv::imencode(".JPG", img, buf);
 			anImage.set_data(string(reinterpret_cast<char*>(&buf[0]),buf.size()));
 			anImage.SerializeToString(&value);
