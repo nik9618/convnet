@@ -32,6 +32,18 @@ target_link_libraries(create_lmdb ${Boost_LIBRARIES})
 target_link_libraries(create_lmdb ${OpenCV_LIBS})
 target_link_libraries(create_lmdb ${PROTOBUF_LIBRARIES})
 
+add_executable(
+    main
+    src/main.cpp
+	src/proto/data.pb.cc
+    src/utils.cpp
+    src/Db.cpp)
+
+target_link_libraries(main ${LMDB_LIBRARY})
+target_link_libraries(main ${Boost_LIBRARIES})
+target_link_libraries(main ${OpenCV_LIBS})
+target_link_libraries(main ${PROTOBUF_LIBRARIES})
+
 
 
 

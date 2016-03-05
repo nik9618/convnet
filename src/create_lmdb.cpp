@@ -129,7 +129,6 @@ int main()
 	DB* g = new DB(dbpath_);
 	g->createDB(pathAndLabel);
 
-
 	//read from db
 	return 0;
 }

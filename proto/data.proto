@@ -1,0 +1,24 @@
+syntax = "proto3";
+package Data;
+
+message  categoryList{
+	repeated category category = 1;
+} 
+
+message category {
+	string name = 1;
+	int32 id = 2;
+}
+
+message Gallery{
+	repeated Datum images = 1;
+}
+
+message Datum{
+	int32 channel = 1;
+	int32 width = 2;
+	int32 height = 3;
+	int32 label = 4;
+	string name = 5;
+	bytes data = 6;
+}
