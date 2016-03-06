@@ -5565,6 +5565,14 @@ Db.hpp
 /home/kanit/convnet/src/Db.hpp
 proto/data.pb.h
 /home/kanit/convnet/src/proto/data.pb.h
+opencv2/core/core.hpp
+-
+opencv2/highgui/highgui.hpp
+-
+opencv2/highgui/highgui_c.h
+-
+opencv2/imgproc/imgproc.hpp
+-
 
 /home/kanit/convnet/src/proto/data.pb.h
 string

@@ -3,6 +3,10 @@
 #include <iostream>
 #include "Db.hpp"
 #include "proto/data.pb.h"
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/highgui/highgui_c.h>
+#include <opencv2/imgproc/imgproc.hpp>
 
 using namespace std;
 #define dbpath_ "/home/kanit/convnet/data/lmdb"
@@ -21,10 +25,14 @@ int main()
 	cout<< data.name() <<endl;
 
 	string* img = data.mutable_data();
-	vector<uchar> v(img->length());
-	memcpy(&v,&img,img->length()); 
-
-
+	string simg = *reinterpret_cast<string *>(img);
+	const char * cimg = simg.c_str();
+	vector<uchar> v(simg.length());
+	cout<< v.size() << endl;
+	memcpy(&v[0],cimg,simg.length());
+	cv::Mat matrixJpg = imdecode(cv::Mat(v), 1);
+	imwrite( "test.jpg", matrixJpg );
+	
 	d->endread();
 	return 0;
 }
