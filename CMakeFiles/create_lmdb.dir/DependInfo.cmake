@@ -21,6 +21,8 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/kanit/build/boost_1_59_0"
   "/usr/local/include"
   "."
+  "/home/kanit/build/cuda/include"
+  "/usr/local/cuda/include"
   "/usr/local/include/opencv"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

@@ -91,13 +91,48 @@ clean: CMakeFiles/create_lmdb.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/datalayer.dir
+
+# All Build rule for target.
+CMakeFiles/datalayer.dir/all:
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/depend
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kanit/convnet/CMakeFiles  5 6 7 8
+	@echo "Built target datalayer"
+.PHONY : CMakeFiles/datalayer.dir/all
+
+# Include target in all.
+all: CMakeFiles/datalayer.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/datalayer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanit/convnet/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/datalayer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanit/convnet/CMakeFiles 0
+.PHONY : CMakeFiles/datalayer.dir/rule
+
+# Convenience name for target.
+datalayer: CMakeFiles/datalayer.dir/rule
+.PHONY : datalayer
+
+# clean rule for target.
+CMakeFiles/datalayer.dir/clean:
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/clean
+.PHONY : CMakeFiles/datalayer.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/datalayer.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
 CMakeFiles/main.dir/all:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kanit/convnet/CMakeFiles  5 6 7 8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kanit/convnet/CMakeFiles  9
 	@echo "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
@@ -107,7 +142,7 @@ all: CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanit/convnet/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanit/convnet/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanit/convnet/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule

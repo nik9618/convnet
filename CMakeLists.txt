@@ -1,3 +1,6 @@
+# Dont forget about : 
+# FLAG -O3
+
 project (ConvNet)
 cmake_minimum_required (VERSION 2.6)
 
@@ -33,27 +36,23 @@ target_link_libraries(create_lmdb ${OpenCV_LIBS})
 target_link_libraries(create_lmdb ${PROTOBUF_LIBRARIES})
 
 add_executable(
-    main
-    src/main.cpp
-	src/proto/data.pb.cc
+    datalayer
+    src/datalayer.cpp
+    src/proto/data.pb.cc
     src/utils.cpp
     src/Db.cpp)
 
-target_link_libraries(main ${LMDB_LIBRARY})
-target_link_libraries(main ${Boost_LIBRARIES})
-target_link_libraries(main ${OpenCV_LIBS})
-target_link_libraries(main ${PROTOBUF_LIBRARIES})
+target_link_libraries(datalayer ${LMDB_LIBRARY})
+target_link_libraries(datalayer ${Boost_LIBRARIES})
+target_link_libraries(datalayer ${OpenCV_LIBS})
+target_link_libraries(datalayer ${PROTOBUF_LIBRARIES})
 
+find_package(CUDA)
+include_directories(/home/kanit/build/cuda/include)
+link_directories(/home/kanit/build/cuda/lib64)
+set (CMAKE_SHARED_LINKER_FLAGS "-lcudnn")
 
-
-
-#find_package(CUDA)
-# include_directories(/home/kanit/build/cudnn/include)
-# link_directories(/home/kanit/build/cudnn/lib64)
-# set (CMAKE_SHARED_LINKER_FLAGS "-lcudnn")
-# add_executable(main main.cpp)
-#add_executable(
-#    main
-#    src/main.cpp
-#    src/Data.cpp)
-# target_link_libraries(main ${LMDB_LIBRARY})
+cuda_add_executable(
+    main
+    src/main.cu
+)

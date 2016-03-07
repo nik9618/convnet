@@ -52,159 +52,200 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
-CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/main.cpp.o: src/main.cpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: src/main.cu
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/_G_config.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/alloca.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/assert.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/backward/binders.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/allocator.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/atomic_lockfree_defines.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/basic_ios.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/basic_ios.tcc
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/basic_string.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/basic_string.tcc
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/char_traits.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/concept_check.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/cpp_type_traits.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/cxxabi_forced.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/exception_defines.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/functexcept.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/ios_base.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/istream.tcc
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/locale_classes.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/locale_classes.tcc
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/locale_facets.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/locale_facets.tcc
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/localefwd.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/memoryfwd.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/move.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/ostream.tcc
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/ostream_insert.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/postypes.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/range_access.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/stl_algobase.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/stl_function.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/stl_iterator.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/stl_iterator_base_funcs.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/stl_iterator_base_types.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/stl_pair.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/streambuf.tcc
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/streambuf_iterator.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/bits/stringfwd.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/cctype
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/clocale
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/cmath
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/cstdlib
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/cwchar
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/cwctype
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/debug/debug.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/exception
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/ext/atomicity.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/ext/new_allocator.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/ext/numeric_traits.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/ext/type_traits.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/ios
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/iosfwd
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/iostream
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/istream
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/new
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/ostream
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/streambuf
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/c++/4.8/string
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/ctype.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/endian.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/features.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/libio.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/limits.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/linux/limits.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/locale.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/math.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/pthread.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/sched.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/stdc-predef.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/stdio.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/stdlib.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/string.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/time.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/wchar.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/wctype.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/byteswap-16.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/byteswap.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/endian.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/huge_val.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/huge_valf.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/huge_vall.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/inf.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/local_lim.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/locale.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/mathcalls.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/mathdef.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/nan.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/posix1_lim.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/posix2_lim.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/sched.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/select.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/setjmp.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/sigset.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/time.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/timex.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/types.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/typesizes.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/waitflags.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/waitstatus.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/wchar.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/wordsize.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/bits/xopen_lim.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/c++/4.8/bits/atomic_word.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++allocator.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++locale.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/c++/4.8/bits/cpu_defines.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/c++/4.8/bits/ctype_base.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/c++/4.8/bits/ctype_inline.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/c++/4.8/bits/gthr-default.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/c++/4.8/bits/gthr.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/gnu/stubs.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/sys/cdefs.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/sys/select.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/sys/sysmacros.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/x86_64-linux-gnu/sys/types.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/include/xlocale.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/builtin_types.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/channel_descriptor.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/common_functions.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/cuda_device_runtime_api.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/cuda_runtime.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/cuda_runtime_api.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/cuda_surface_types.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/cuda_texture_types.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/device_atomic_functions.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/device_atomic_functions.hpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/device_double_functions.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/device_double_functions.hpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/device_functions.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/device_functions.hpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/device_launch_parameters.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/device_types.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/driver_functions.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/driver_types.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/host_config.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/host_defines.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/math_functions.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/math_functions.hpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/math_functions_dbl_ptx3.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/math_functions_dbl_ptx3.hpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.hpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/sm_20_intrinsics.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/sm_20_intrinsics.hpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/sm_30_intrinsics.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/sm_30_intrinsics.hpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.hpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/sm_32_intrinsics.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/sm_32_intrinsics.hpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/sm_35_atomic_functions.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/sm_35_intrinsics.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/surface_functions.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/surface_functions.hpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/surface_indirect_functions.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/surface_indirect_functions.hpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/surface_types.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/texture_fetch_functions.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/texture_fetch_functions.hpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/texture_indirect_functions.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/texture_indirect_functions.hpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/texture_types.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/vector_functions.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/vector_functions.hpp
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: /usr/local/cuda/include/vector_types.h
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: CMakeFiles/main.dir/src/main_generated_main.cu.o.cmake
+CMakeFiles/main.dir/src/./main_generated_main.cu.o: src/main.cu
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/kanit/convnet/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/main.cpp.o -c /home/kanit/convnet/src/main.cpp
-
-CMakeFiles/main.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kanit/convnet/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
-
-CMakeFiles/main.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kanit/convnet/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
-
-CMakeFiles/main.dir/src/main.cpp.o.requires:
-.PHONY : CMakeFiles/main.dir/src/main.cpp.o.requires
-
-CMakeFiles/main.dir/src/main.cpp.o.provides: CMakeFiles/main.dir/src/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o.provides.build
-.PHONY : CMakeFiles/main.dir/src/main.cpp.o.provides
-
-CMakeFiles/main.dir/src/main.cpp.o.provides.build: CMakeFiles/main.dir/src/main.cpp.o
-
-CMakeFiles/main.dir/src/proto/data.pb.cc.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/proto/data.pb.cc.o: src/proto/data.pb.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kanit/convnet/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/main.dir/src/proto/data.pb.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/proto/data.pb.cc.o -c /home/kanit/convnet/src/proto/data.pb.cc
-
-CMakeFiles/main.dir/src/proto/data.pb.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/proto/data.pb.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kanit/convnet/src/proto/data.pb.cc > CMakeFiles/main.dir/src/proto/data.pb.cc.i
-
-CMakeFiles/main.dir/src/proto/data.pb.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/proto/data.pb.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kanit/convnet/src/proto/data.pb.cc -o CMakeFiles/main.dir/src/proto/data.pb.cc.s
-
-CMakeFiles/main.dir/src/proto/data.pb.cc.o.requires:
-.PHONY : CMakeFiles/main.dir/src/proto/data.pb.cc.o.requires
-
-CMakeFiles/main.dir/src/proto/data.pb.cc.o.provides: CMakeFiles/main.dir/src/proto/data.pb.cc.o.requires
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/proto/data.pb.cc.o.provides.build
-.PHONY : CMakeFiles/main.dir/src/proto/data.pb.cc.o.provides
-
-CMakeFiles/main.dir/src/proto/data.pb.cc.o.provides.build: CMakeFiles/main.dir/src/proto/data.pb.cc.o
-
-CMakeFiles/main.dir/src/utils.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/utils.cpp.o: src/utils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kanit/convnet/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/main.dir/src/utils.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/utils.cpp.o -c /home/kanit/convnet/src/utils.cpp
-
-CMakeFiles/main.dir/src/utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/utils.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kanit/convnet/src/utils.cpp > CMakeFiles/main.dir/src/utils.cpp.i
-
-CMakeFiles/main.dir/src/utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/utils.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kanit/convnet/src/utils.cpp -o CMakeFiles/main.dir/src/utils.cpp.s
-
-CMakeFiles/main.dir/src/utils.cpp.o.requires:
-.PHONY : CMakeFiles/main.dir/src/utils.cpp.o.requires
-
-CMakeFiles/main.dir/src/utils.cpp.o.provides: CMakeFiles/main.dir/src/utils.cpp.o.requires
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/utils.cpp.o.provides.build
-.PHONY : CMakeFiles/main.dir/src/utils.cpp.o.provides
-
-CMakeFiles/main.dir/src/utils.cpp.o.provides.build: CMakeFiles/main.dir/src/utils.cpp.o
-
-CMakeFiles/main.dir/src/Db.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/Db.cpp.o: src/Db.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kanit/convnet/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/main.dir/src/Db.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/Db.cpp.o -c /home/kanit/convnet/src/Db.cpp
-
-CMakeFiles/main.dir/src/Db.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Db.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kanit/convnet/src/Db.cpp > CMakeFiles/main.dir/src/Db.cpp.i
-
-CMakeFiles/main.dir/src/Db.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Db.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kanit/convnet/src/Db.cpp -o CMakeFiles/main.dir/src/Db.cpp.s
-
-CMakeFiles/main.dir/src/Db.cpp.o.requires:
-.PHONY : CMakeFiles/main.dir/src/Db.cpp.o.requires
-
-CMakeFiles/main.dir/src/Db.cpp.o.provides: CMakeFiles/main.dir/src/Db.cpp.o.requires
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Db.cpp.o.provides.build
-.PHONY : CMakeFiles/main.dir/src/Db.cpp.o.provides
-
-CMakeFiles/main.dir/src/Db.cpp.o.provides.build: CMakeFiles/main.dir/src/Db.cpp.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building NVCC (Device) object CMakeFiles/main.dir/src/./main_generated_main.cu.o"
+	cd /home/kanit/convnet/CMakeFiles/main.dir/src && /usr/bin/cmake -E make_directory /home/kanit/convnet/CMakeFiles/main.dir/src/.
+	cd /home/kanit/convnet/CMakeFiles/main.dir/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/kanit/convnet/CMakeFiles/main.dir/src/./main_generated_main.cu.o -D generated_cubin_file:STRING=/home/kanit/convnet/CMakeFiles/main.dir/src/./main_generated_main.cu.o.cubin.txt -P /home/kanit/convnet/CMakeFiles/main.dir/src/main_generated_main.cu.o.cmake
 
 # Object files for target main
-main_OBJECTS = \
-"CMakeFiles/main.dir/src/main.cpp.o" \
-"CMakeFiles/main.dir/src/proto/data.pb.cc.o" \
-"CMakeFiles/main.dir/src/utils.cpp.o" \
-"CMakeFiles/main.dir/src/Db.cpp.o"
+main_OBJECTS =
 
 # External object files for target main
-main_EXTERNAL_OBJECTS =
+main_EXTERNAL_OBJECTS = \
+"/home/kanit/convnet/CMakeFiles/main.dir/src/./main_generated_main.cu.o"
 
-main: CMakeFiles/main.dir/src/main.cpp.o
-main: CMakeFiles/main.dir/src/proto/data.pb.cc.o
-main: CMakeFiles/main.dir/src/utils.cpp.o
-main: CMakeFiles/main.dir/src/Db.cpp.o
+main: CMakeFiles/main.dir/src/./main_generated_main.cu.o
 main: CMakeFiles/main.dir/build.make
-main: /usr/lib/x86_64-linux-gnu/liblmdb.so
-main: /home/kanit/build/boost_1_59_0/stage/lib/libboost_system.so
-main: /home/kanit/build/boost_1_59_0/stage/lib/libboost_filesystem.so
-main: /usr/local/lib/libopencv_videostab.so.3.1.0
-main: /usr/local/lib/libopencv_videoio.so.3.1.0
-main: /usr/local/lib/libopencv_video.so.3.1.0
-main: /usr/local/lib/libopencv_superres.so.3.1.0
-main: /usr/local/lib/libopencv_stitching.so.3.1.0
-main: /usr/local/lib/libopencv_shape.so.3.1.0
-main: /usr/local/lib/libopencv_photo.so.3.1.0
-main: /usr/local/lib/libopencv_objdetect.so.3.1.0
-main: /usr/local/lib/libopencv_ml.so.3.1.0
-main: /usr/local/lib/libopencv_imgproc.so.3.1.0
-main: /usr/local/lib/libopencv_imgcodecs.so.3.1.0
-main: /usr/local/lib/libopencv_highgui.so.3.1.0
-main: /usr/local/lib/libopencv_flann.so.3.1.0
-main: /usr/local/lib/libopencv_features2d.so.3.1.0
-main: /usr/local/lib/libopencv_cudev.so.3.1.0
-main: /usr/local/lib/libopencv_cudawarping.so.3.1.0
-main: /usr/local/lib/libopencv_cudastereo.so.3.1.0
-main: /usr/local/lib/libopencv_cudaoptflow.so.3.1.0
-main: /usr/local/lib/libopencv_cudaobjdetect.so.3.1.0
-main: /usr/local/lib/libopencv_cudalegacy.so.3.1.0
-main: /usr/local/lib/libopencv_cudaimgproc.so.3.1.0
-main: /usr/local/lib/libopencv_cudafilters.so.3.1.0
-main: /usr/local/lib/libopencv_cudafeatures2d.so.3.1.0
-main: /usr/local/lib/libopencv_cudacodec.so.3.1.0
-main: /usr/local/lib/libopencv_cudabgsegm.so.3.1.0
-main: /usr/local/lib/libopencv_cudaarithm.so.3.1.0
-main: /usr/local/lib/libopencv_core.so.3.1.0
-main: /usr/local/lib/libopencv_calib3d.so.3.1.0
-main: /usr/local/lib/libprotobuf.so
-main: /usr/local/lib/libopencv_cudawarping.so.3.1.0
-main: /usr/local/lib/libopencv_objdetect.so.3.1.0
-main: /usr/local/lib/libopencv_cudafilters.so.3.1.0
-main: /usr/local/lib/libopencv_cudaarithm.so.3.1.0
-main: /usr/local/lib/libopencv_features2d.so.3.1.0
-main: /usr/local/lib/libopencv_ml.so.3.1.0
-main: /usr/local/lib/libopencv_highgui.so.3.1.0
-main: /usr/local/lib/libopencv_videoio.so.3.1.0
-main: /usr/local/lib/libopencv_imgcodecs.so.3.1.0
-main: /usr/local/lib/libopencv_flann.so.3.1.0
-main: /usr/local/lib/libopencv_video.so.3.1.0
-main: /usr/local/lib/libopencv_imgproc.so.3.1.0
-main: /usr/local/lib/libopencv_core.so.3.1.0
-main: /usr/local/lib/libopencv_cudev.so.3.1.0
+main: /usr/local/cuda/lib64/libcudart.so
 main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
@@ -213,17 +254,14 @@ main: CMakeFiles/main.dir/link.txt
 CMakeFiles/main.dir/build: main
 .PHONY : CMakeFiles/main.dir/build
 
-CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/main.cpp.o.requires
-CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/proto/data.pb.cc.o.requires
-CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/utils.cpp.o.requires
-CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/Db.cpp.o.requires
+CMakeFiles/main.dir/requires:
 .PHONY : CMakeFiles/main.dir/requires
 
 CMakeFiles/main.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/main.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/main.dir/clean
 
-CMakeFiles/main.dir/depend:
+CMakeFiles/main.dir/depend: CMakeFiles/main.dir/src/./main_generated_main.cu.o
 	cd /home/kanit/convnet && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kanit/convnet /home/kanit/convnet /home/kanit/convnet /home/kanit/convnet /home/kanit/convnet/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

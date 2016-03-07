@@ -115,6 +115,19 @@ create_lmdb/fast:
 .PHONY : create_lmdb/fast
 
 #=============================================================================
+# Target rules for targets named datalayer
+
+# Build rule for target.
+datalayer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 datalayer
+.PHONY : datalayer
+
+# fast build rule for target.
+datalayer/fast:
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/build
+.PHONY : datalayer/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -133,7 +146,7 @@ src/Db.o: src/Db.cpp.o
 # target to build an object file
 src/Db.cpp.o:
 	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Db.cpp.o
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Db.cpp.o
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/src/Db.cpp.o
 .PHONY : src/Db.cpp.o
 
 src/Db.i: src/Db.cpp.i
@@ -142,7 +155,7 @@ src/Db.i: src/Db.cpp.i
 # target to preprocess a source file
 src/Db.cpp.i:
 	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Db.cpp.i
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Db.cpp.i
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/src/Db.cpp.i
 .PHONY : src/Db.cpp.i
 
 src/Db.s: src/Db.cpp.s
@@ -151,7 +164,7 @@ src/Db.s: src/Db.cpp.s
 # target to generate assembly for a file
 src/Db.cpp.s:
 	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/Db.cpp.s
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Db.cpp.s
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/src/Db.cpp.s
 .PHONY : src/Db.cpp.s
 
 src/create_lmdb.o: src/create_lmdb.cpp.o
@@ -178,29 +191,29 @@ src/create_lmdb.cpp.s:
 	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/create_lmdb.cpp.s
 .PHONY : src/create_lmdb.cpp.s
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/datalayer.o: src/datalayer.cpp.o
+.PHONY : src/datalayer.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/datalayer.cpp.o:
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/src/datalayer.cpp.o
+.PHONY : src/datalayer.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/datalayer.i: src/datalayer.cpp.i
+.PHONY : src/datalayer.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/datalayer.cpp.i:
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/src/datalayer.cpp.i
+.PHONY : src/datalayer.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/datalayer.s: src/datalayer.cpp.s
+.PHONY : src/datalayer.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/datalayer.cpp.s:
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/src/datalayer.cpp.s
+.PHONY : src/datalayer.cpp.s
 
 src/proto/data.pb.o: src/proto/data.pb.cc.o
 .PHONY : src/proto/data.pb.o
@@ -208,7 +221,7 @@ src/proto/data.pb.o: src/proto/data.pb.cc.o
 # target to build an object file
 src/proto/data.pb.cc.o:
 	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/proto/data.pb.cc.o
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/proto/data.pb.cc.o
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/src/proto/data.pb.cc.o
 .PHONY : src/proto/data.pb.cc.o
 
 src/proto/data.pb.i: src/proto/data.pb.cc.i
@@ -217,7 +230,7 @@ src/proto/data.pb.i: src/proto/data.pb.cc.i
 # target to preprocess a source file
 src/proto/data.pb.cc.i:
 	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/proto/data.pb.cc.i
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/proto/data.pb.cc.i
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/src/proto/data.pb.cc.i
 .PHONY : src/proto/data.pb.cc.i
 
 src/proto/data.pb.s: src/proto/data.pb.cc.s
@@ -226,7 +239,7 @@ src/proto/data.pb.s: src/proto/data.pb.cc.s
 # target to generate assembly for a file
 src/proto/data.pb.cc.s:
 	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/proto/data.pb.cc.s
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/proto/data.pb.cc.s
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/src/proto/data.pb.cc.s
 .PHONY : src/proto/data.pb.cc.s
 
 src/utils.o: src/utils.cpp.o
@@ -235,7 +248,7 @@ src/utils.o: src/utils.cpp.o
 # target to build an object file
 src/utils.cpp.o:
 	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/utils.cpp.o
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/utils.cpp.o
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/src/utils.cpp.o
 .PHONY : src/utils.cpp.o
 
 src/utils.i: src/utils.cpp.i
@@ -244,7 +257,7 @@ src/utils.i: src/utils.cpp.i
 # target to preprocess a source file
 src/utils.cpp.i:
 	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/utils.cpp.i
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/utils.cpp.i
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/src/utils.cpp.i
 .PHONY : src/utils.cpp.i
 
 src/utils.s: src/utils.cpp.s
@@ -253,7 +266,7 @@ src/utils.s: src/utils.cpp.s
 # target to generate assembly for a file
 src/utils.cpp.s:
 	$(MAKE) -f CMakeFiles/create_lmdb.dir/build.make CMakeFiles/create_lmdb.dir/src/utils.cpp.s
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/utils.cpp.s
+	$(MAKE) -f CMakeFiles/datalayer.dir/build.make CMakeFiles/datalayer.dir/src/utils.cpp.s
 .PHONY : src/utils.cpp.s
 
 # Help Target
@@ -263,6 +276,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... create_lmdb"
+	@echo "... datalayer"
 	@echo "... edit_cache"
 	@echo "... main"
 	@echo "... rebuild_cache"
@@ -272,9 +286,9 @@ help:
 	@echo "... src/create_lmdb.o"
 	@echo "... src/create_lmdb.i"
 	@echo "... src/create_lmdb.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/datalayer.o"
+	@echo "... src/datalayer.i"
+	@echo "... src/datalayer.s"
 	@echo "... src/proto/data.pb.o"
 	@echo "... src/proto/data.pb.i"
 	@echo "... src/proto/data.pb.s"
